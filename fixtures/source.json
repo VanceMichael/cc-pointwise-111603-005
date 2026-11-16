@@ -1,0 +1,86 @@
+{
+  "stages": {
+    "opening": {
+      "routes": {
+        "/catalog/channel-a": {
+          "contentType": "application/json",
+          "body": {
+            "items": [
+              {
+                "variantId": "a-red-m",
+                "productId": "P1",
+                "channel": "a",
+                "name": "衬衫",
+                "color": "红",
+                "size": "M",
+                "mappingVersion": 1,
+                "observedAt": "2026-11-16T08:00:00Z"
+              }
+            ],
+            "next": null
+          },
+          "etag": "\"opening\""
+        },
+        "/catalog/channel-b": {
+          "contentType": "application/json",
+          "body": {
+            "items": [
+              {
+                "variantId": "b-17",
+                "productId": "shirt",
+                "channel": "b",
+                "name": "衬衫",
+                "tone": "red",
+                "dimension": "M",
+                "mappingVersion": 1,
+                "observedAt": "2026-11-16T08:00:00Z"
+              }
+            ],
+            "next": null
+          }
+        }
+      }
+    },
+    "updated": {
+      "routes": {
+        "/catalog/channel-a": {
+          "contentType": "application/json",
+          "body": {
+            "items": [
+              {
+                "variantId": "a-red-m",
+                "productId": "P1",
+                "channel": "a",
+                "name": "衬衫",
+                "color": "scarlet",
+                "size": "medium",
+                "mappingVersion": 2,
+                "observedAt": "2026-11-16T09:00:00Z"
+              }
+            ],
+            "next": null
+          },
+          "etag": "\"updated\""
+        },
+        "/catalog/channel-b": {
+          "contentType": "application/json",
+          "body": {
+            "items": [
+              {
+                "variantId": "b-17",
+                "productId": "shirt",
+                "channel": "b",
+                "name": "衬衫",
+                "tone": "red",
+                "dimension": "M",
+                "mappingVersion": 1,
+                "observedAt": "2026-11-16T08:00:00Z"
+              }
+            ],
+            "next": null
+          }
+        }
+      }
+    }
+  }
+}
