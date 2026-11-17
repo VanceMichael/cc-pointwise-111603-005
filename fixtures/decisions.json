@@ -2,8 +2,25 @@
   {
     "source": "a",
     "variantId": "a-red-m",
+    "canonicalProduct": "shirt",
     "canonicalVariant": "red-medium",
     "decisionRevision": 2,
+    "confirmedBy": "operator-local"
+  },
+  {
+    "source": "b",
+    "variantId": "b-17",
+    "canonicalProduct": "shirt",
+    "canonicalVariant": "red-medium",
+    "decisionRevision": 3,
+    "confirmedBy": "operator-local"
+  },
+  {
+    "source": "a",
+    "variantId": "a-blue-m",
+    "canonicalProduct": "shirt",
+    "canonicalVariant": "blue-medium",
+    "decisionRevision": 4,
     "confirmedBy": "operator-local"
   }
 ]

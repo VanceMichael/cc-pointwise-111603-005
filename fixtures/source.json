@@ -15,6 +15,16 @@
                 "size": "M",
                 "mappingVersion": 1,
                 "observedAt": "2026-11-16T08:00:00Z"
+              },
+              {
+                "variantId": "a-blue-m",
+                "productId": "P1",
+                "channel": "a",
+                "name": "衬衫",
+                "color": "蓝",
+                "size": "M",
+                "mappingVersion": 1,
+                "observedAt": "2026-11-16T08:00:00Z"
               }
             ],
             "next": null
@@ -31,6 +41,16 @@
                 "channel": "b",
                 "name": "衬衫",
                 "tone": "red",
+                "dimension": "M",
+                "mappingVersion": 1,
+                "observedAt": "2026-11-16T08:00:00Z"
+              },
+              {
+                "variantId": "b-18",
+                "productId": "shirt",
+                "channel": "b",
+                "name": "衬衫",
+                "tone": "blue",
                 "dimension": "M",
                 "mappingVersion": 1,
                 "observedAt": "2026-11-16T08:00:00Z"
@@ -56,6 +76,16 @@
                 "size": "medium",
                 "mappingVersion": 2,
                 "observedAt": "2026-11-16T09:00:00Z"
+              },
+              {
+                "variantId": "a-blue-m",
+                "productId": "P1",
+                "channel": "a",
+                "name": "衬衫",
+                "color": "azure",
+                "size": "medium",
+                "mappingVersion": 2,
+                "observedAt": "2026-11-16T09:00:00Z"
               }
             ],
             "next": null
@@ -72,6 +102,16 @@
                 "channel": "b",
                 "name": "衬衫",
                 "tone": "red",
+                "dimension": "M",
+                "mappingVersion": 1,
+                "observedAt": "2026-11-16T08:00:00Z"
+              },
+              {
+                "variantId": "b-18",
+                "productId": "shirt",
+                "channel": "b",
+                "name": "衬衫",
+                "tone": "blue",
                 "dimension": "M",
                 "mappingVersion": 1,
                 "observedAt": "2026-11-16T08:00:00Z"
