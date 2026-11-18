@@ -1,6 +1,6 @@
 [
   {
-    "sourceId": "a-red-m",
+    "sourceId": "a:a-red-m",
     "source": "商品目录采集器",
     "observedAt": "2026-11-16T08:00:00Z",
     "label": "衬衫",
@@ -11,6 +11,38 @@
       "name": "衬衫",
       "color": "红",
       "size": "M",
+      "mappingVersion": 1,
+      "observedAt": "2026-11-16T08:00:00Z"
+    }
+  },
+  {
+    "sourceId": "b:b-17",
+    "source": "商品目录采集器",
+    "observedAt": "2026-11-16T08:00:00Z",
+    "label": "衬衫",
+    "attributes": {
+      "variantId": "b-17",
+      "productId": "shirt",
+      "channel": "b",
+      "name": "衬衫",
+      "tone": "red",
+      "dimension": "M",
+      "mappingVersion": 1,
+      "observedAt": "2026-11-16T08:00:00Z"
+    }
+  },
+  {
+    "sourceId": "b:b-18",
+    "source": "商品目录采集器",
+    "observedAt": "2026-11-16T08:00:00Z",
+    "label": "衬衫",
+    "attributes": {
+      "variantId": "b-18",
+      "productId": "shirt",
+      "channel": "b",
+      "name": "衬衫",
+      "tone": "blue",
+      "dimension": "L",
       "mappingVersion": 1,
       "observedAt": "2026-11-16T08:00:00Z"
     }

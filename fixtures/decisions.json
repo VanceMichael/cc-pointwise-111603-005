@@ -2,8 +2,21 @@
   {
     "source": "a",
     "variantId": "a-red-m",
+    "canonicalProduct": "shirt",
+    "canonicalVariant": "red-medium",
+    "decisionRevision": 1,
+    "confirmedBy": "operator-local",
+    "confirmedAt": "2026-11-16T08:05:00Z",
+    "note": "首批人工确认：渠道A 红/M 对应 red-medium"
+  },
+  {
+    "source": "a",
+    "variantId": "a-red-m",
+    "canonicalProduct": "shirt",
     "canonicalVariant": "red-medium",
     "decisionRevision": 2,
-    "confirmedBy": "operator-local"
+    "confirmedBy": "operator-local",
+    "confirmedAt": "2026-11-16T08:20:00Z",
+    "note": "复核确认，维持 red-medium 归并"
   }
 ]

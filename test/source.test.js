@@ -5,7 +5,7 @@ import { tmpdir } from 'node:os';
 import { join } from 'node:path';
 import { startSource } from '../source/server.js';
 import { SourceClient } from '../src/source-client.js';
-import { parsePage, entryPath } from '../src/adapter.js';
+import { parsePage, entryPath, channelEntryPaths } from '../src/adapter.js';
 import { RecordRepository } from '../src/repository.js';
 import { CollectionService } from '../src/service.js';
 import { readOperations } from '../src/operations.js';
@@ -26,6 +26,27 @@ test('source adapter, persistence and operations consumer agree on a first impor
     assert.equal(view.rows.length, page.records.length);
     assert.ok(view.rows.every((row) => row.sourceId && row.attributes));
     assert.ok(source.requests.some((request) => request.path === entryPath));
+  } finally { await source.close(); await rm(directory, { recursive: true, force: true }); }
+});
+
+test('两个渠道的变体以渠道作用域身份保存，B 渠道保留 tone/dimension 原始字段', async () => {
+  const source = await startSource(scenarioPath);
+  const directory = await mkdtemp(join(tmpdir(), 'source-integration-'));
+  try {
+    const client = new SourceClient(source.url);
+    const pages = await Promise.all(
+      Object.values(channelEntryPaths).map(async (path) => parsePage(await client.read(path), path)),
+    );
+    const records = pages.flatMap((page) => page.records);
+    assert.deepEqual(records.map((record) => record.sourceId).sort(),
+      ['a:a-red-m', 'b:b-17', 'b:b-18']);
+    const bRecord = records.find((record) => record.sourceId === 'b:b-17');
+    assert.equal(bRecord.attributes.tone, 'red');
+    assert.equal(bRecord.attributes.dimension, 'M');
+    assert.equal(bRecord.attributes.color, undefined);
+    const repository = new RecordRepository(join(directory, 'records.json'));
+    await new CollectionService(repository).ingest(records);
+    assert.equal((await repository.read()).length, 3);
   } finally { await source.close(); await rm(directory, { recursive: true, force: true }); }
 });
 

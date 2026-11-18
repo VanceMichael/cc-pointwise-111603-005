@@ -34,6 +34,16 @@
                 "dimension": "M",
                 "mappingVersion": 1,
                 "observedAt": "2026-11-16T08:00:00Z"
+              },
+              {
+                "variantId": "b-18",
+                "productId": "shirt",
+                "channel": "b",
+                "name": "衬衫",
+                "tone": "blue",
+                "dimension": "L",
+                "mappingVersion": 1,
+                "observedAt": "2026-11-16T08:00:00Z"
               }
             ],
             "next": null
@@ -73,6 +83,16 @@
                 "name": "衬衫",
                 "tone": "red",
                 "dimension": "M",
+                "mappingVersion": 1,
+                "observedAt": "2026-11-16T08:00:00Z"
+              },
+              {
+                "variantId": "b-18",
+                "productId": "shirt",
+                "channel": "b",
+                "name": "衬衫",
+                "tone": "blue",
+                "dimension": "L",
                 "mappingVersion": 1,
                 "observedAt": "2026-11-16T08:00:00Z"
               }

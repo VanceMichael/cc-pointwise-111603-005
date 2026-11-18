@@ -8,5 +8,5 @@ export const schema = Object.freeze({
     "observedAt",
     "label"
   ],
-  "description": "商品变体目录的跨源归并"
+  "description": "商品变体目录的跨源归并；sourceId 采用 渠道:变体号 作用域，跨渠道归并仅由人工决策建立"
 });

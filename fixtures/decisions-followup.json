@@ -1,0 +1,22 @@
+[
+  {
+    "source": "b",
+    "variantId": "b-17",
+    "canonicalProduct": "shirt",
+    "canonicalVariant": "red-medium",
+    "decisionRevision": 1,
+    "confirmedBy": "operator-local",
+    "confirmedAt": "2026-11-16T10:00:00Z",
+    "note": "运营依据实物吊牌确认：b-17 与 red-medium 同款同色同码"
+  },
+  {
+    "source": "b",
+    "variantId": "b-18",
+    "canonicalProduct": "shirt",
+    "canonicalVariant": "blue-large",
+    "decisionRevision": 1,
+    "confirmedBy": "operator-local",
+    "confirmedAt": "2026-11-16T10:05:00Z",
+    "note": "蓝/L 是独立可售变体，库存不得与 red-medium 混用"
+  }
+]
